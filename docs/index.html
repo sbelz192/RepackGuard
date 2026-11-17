@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RepackGuard — Erkennt, wenn Installer den Virenschutz aushebeln</title>
+<meta name="description" content="OpenSource-Watchdog gegen Repack-Infektionen und Scam-Weiterverbreitung: erkennt in Echtzeit, wenn Software den Microsoft Defender aushebt.">
+<style>
+  :root{
+    --bg:#0b1220; --bg2:#131c2e; --line:#26324a; --txt:#e5e9f0; --mut:#aab4c6;
+    --blue:#38bdf8; --blue2:#2563eb; --amber:#fbbf24; --red:#f87171;
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  a{color:var(--blue)}
+
+  /* Hero */
+  header{padding:72px 0 40px;text-align:center;
+         background:radial-gradient(900px 400px at 50% -80px,#132545 0%,transparent 60%)}
+  .logo{width:96px;height:96px;border-radius:24px;box-shadow:0 14px 40px rgba(37,99,235,.35)}
+  h1{font-size:clamp(28px,4.6vw,46px);line-height:1.15;margin:22px 0 10px;letter-spacing:-.02em}
+  .sub{color:var(--mut);font-size:clamp(15px,2vw,19px);max-width:760px;margin:0 auto}
+  .tag{display:inline-block;border:1px solid var(--line);background:var(--bg2);
+       color:var(--blue);border-radius:999px;padding:6px 14px;font-size:13px;margin-bottom:18px}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;
+       padding:14px 24px;border-radius:12px;border:1px solid transparent}
+  .btn-p{background:linear-gradient(180deg,var(--blue),var(--blue2));color:#04101f}
+  .btn-g{background:transparent;color:var(--txt);border-color:var(--line)}
+  .btn:hover{filter:brightness(1.08)}
+
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 8px;letter-spacing:-.01em}
+  .lead{color:var(--mut);margin:0 0 28px;max-width:780px}
+
+  .grid{display:grid;gap:18px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:860px){.g3,.g2{grid-template-columns:1fr}}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card h3{margin:0 0 8px;font-size:18px;color:var(--blue)}
+  .card p{margin:0;color:var(--mut);font-size:15px}
+  .card .n{color:var(--amber);font-weight:700;font-size:14px;letter-spacing:.04em}
+
+  .chain{display:grid;gap:14px;grid-template-columns:repeat(4,1fr);counter-reset:s}
+  @media(max-width:900px){.chain{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.chain{grid-template-columns:1fr}}
+  .step{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:20px;position:relative}
+  .step::before{counter-increment:s;content:counter(s);
+    display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;
+    background:var(--blue2);color:#fff;font-weight:700;font-size:14px;margin-bottom:10px}
+  .step h4{margin:0 0 6px;font-size:15px}
+  .step p{margin:0;color:var(--mut);font-size:13.5px}
+  .step.bad{border-color:#7f1d1d}
+  .step.bad::before{background:#b91c1c}
+
+  code,.code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13.5px}
+  .code{display:block;background:#070d18;border:1px solid var(--line);border-radius:12px;
+        padding:16px;overflow:auto;color:#c9d6e8;white-space:pre}
+  .code .c{color:#64748b}
+
+  .steps{display:grid;gap:16px}
+  .stepbox{display:grid;grid-template-columns:80px 1fr;gap:18px;align-items:start;
+           background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .stepbox .k{color:var(--blue);font-weight:700;font-size:14px}
+  .stepbox h4{margin:0 0 6px;font-size:16px}
+  .stepbox p{margin:0 0 10px;color:var(--mut);font-size:14px}
+
+  .note{border-left:3px solid var(--amber);background:#1a1507;color:#f4d78a;
+        padding:14px 18px;border-radius:0 12px 12px 0;font-size:14px}
+  .okbox{border-left:3px solid var(--blue2);background:#0b1a2e;color:#bcd8f5;
+         padding:14px 18px;border-radius:0 12px 12px 0;font-size:14px}
+
+  footer{padding:44px 0 60px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+  footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  .badge{display:inline-block;background:var(--bg2);border:1px solid var(--line);
+         border-radius:8px;padding:4px 10px;font-size:12px;color:var(--mut);margin-left:6px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="icon.png" alt="RepackGuard-Icon" width="96" height="96">
+    <div class="tag">Open Source · MIT · Windows + Browser</div>
+    <h1>Erkennt, wenn Installer den<br>Virenschutz aushebeln</h1>
+    <p class="sub">
+      RepackGuard ist ein Watchdog für die Kette hinter dem Mr-Beast-Scam und
+      aehnlichen Repack-Infektionen: Er meldet in Echtzeit, wenn Schadsoftware
+      den Microsoft Defender blendet — und warnt vor Scam-Links, bevor sie laden.
+    </p>
+    <div class="cta">
+      <a class="btn btn-p" href="https://github.com/DEIN-NUTZERNAME/RepackGuard">GitHub Repository</a>
+      <a class="btn btn-g" href="#install">Installation</a>
+    </div>
+    <div style="margin-top:18px">
+      <span class="badge">C-Kern portabel</span>
+      <span class="badge">C# Tray</span>
+      <span class="badge">Browser-Erweiterung MV3</span>
+      <span class="badge">100 % Tests</span>
+    </div>
+  </div>
+</header>
+
+<section id="problem">
+  <div class="wrap">
+    <h2>Das Problem: Der Trojaner ist nur der Anfang</h2>
+    <p class="lead">
+      Ein Infostealer-Download (Crack, Mod, Cheat, „Robux-Generator") entwendet
+      Browser-Passwoerter und den Discord-Session-Token. Damit meldet sich der
+      Angreifer im eigenen Account an — <strong>ohne Passwort, 2FA wird umgangen</strong> —
+      und lasst automatisch Scam-Nachrichten an alle Freunde verschicken. Jeder
+      Klick auf den Link startet die Kette von vorn. Der Betroffene wird selbst
+      zum Verbreiter.
+    </p>
+    <div class="chain">
+      <div class="step bad"><h4>Infektion</h4><p>Datei herunterladen und ausfuehren. Infostealer laeuft, oft ohne Symptome.</p></div>
+      <div class="step bad"><h4>Diebstahl</h4><p>Session-Token und Cookies werden ausgelesen — 2FA nuetzt nichts.</p></div>
+      <div class="step bad"><h4>Uebernahme</h4><p>Angreifer nutzt den Token, um sich im eigenen Account anzumelden.</p></div>
+      <div class="step bad"><h4>Verbreitung</h4><p>Automatische Scam-Nachrichten an alle Freunde und Server.</p></div>
+    </div>
+    <div class="note" style="margin-top:22px">
+      Haeufiger Trick des Installers: Die Schaddatei wird erkannt, dann
+      <strong>aus der Quarantaeune zurueckgeholt</strong> und der Defender fuer genau
+      diese Datei <strong>ausgeblendet</strong>. Genau dieses Muster erkennt RepackGuard.
+    </div>
+  </div>
+</section>
+
+<section id="loesung">
+  <div class="wrap">
+    <h2>Die Loesung in drei Bausteinen</h2>
+    <p class="lead">Ein portabler Erkennungskern in C, eine Desktop-App fuer den
+       direkten Schutz und eine Browser-Erweiterung fuer die indirekten Opfer.</p>
+    <div class="grid g3">
+      <div class="card">
+        <h3>Desktop-Tray</h3>
+        <p>Laeuft im Hintergrund, liest das Defender-Eventlog und ruft den C-Kern
+           per P/Invoke auf. Bei AV-Manipulation: Alarm-Popup mit Sofortmassnahmen
+           (Discord-Sitzungen beenden, Passwoerter aendern, Scan starten).</p>
+      </div>
+      <div class="card">
+        <h3>Link Guard</h3>
+        <p>Browser-Erweiterung (Chrome/Edge/Firefox). Prueft angeklickte Links gegen
+           eine Scam-Datenbank und Heuristik und leitet vor der Seite auf eine
+           Warnseite um. Markiert auffaellige Links in Discord Web.</p>
+      </div>
+      <div class="card">
+        <h3>C-Kern (portabel)</h3>
+        <p>Die Erkennungslogik als reine Funktion: Liste von Ereignissen rein,
+           Report raus. Unabhaengig von Windows testbar — mit dem realen Vorfall
+           als Testfall.</p>
+      </div>
+    </div>
+    <div class="okbox" style="margin-top:20px">
+      Transparente Grenzen: Der Desktop-Client von Discord wird nicht ueberwacht
+      (technisch nicht sauber abbildbar), und RepackGuard ersetzt keinen
+      Virenschutz. Es ist eine zusaetzliche Schicht — ehrlich verpackt.
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <h2>Installation</h2>
+    <p class="lead">Zwei Wege: Die Browser-Erweiterung in einer Minute, die
+       Desktop-App aus dem Quelltext.</p>
+    <div class="grid g2">
+      <div class="card">
+        <h3>1 · Link Guard (Browser)</h3>
+        <p>Chrome/Edge: <code>chrome://extensions</code> → Entwicklermodus →
+           „Entpackte Erweiterung laden“ → Ordner <code>browser-extension</code> waehlen.</p>
+        <p>Firefox: <code>about:debugging</code> → „Firefox“ → „Eigene Erweiterungen laden“
+           → <code>manifest.json</code> waehlen.</p>
+      </div>
+      <div class="card">
+        <h3>2 · Desktop-Tray (Windows)</h3>
+        <div class="code"><span class="c"># C-Kern + DLL bauen</span>
+cmake -S . -B build -G "MinGW Makefiles"
+cmake --build build
+
+<span class="c"># Tray-App bauen</span>
+cd bridge/RepackGuard.Tray
+dotnet build -c Release
+
+<span class="c"># starten</span>
+bin/Release/net10.0-windows/RepackGuard.exe</div>
+      </div>
+    </div>
+    <div class="note" style="margin-top:20px">
+      Der Defender-Ereignisprotokoll ist ohne Administrator ggf. nicht lesbar.
+      Ohne Admin bleibt die App im Informationsmodus und meldet das.
+    </div>
+  </div>
+</section>
+
+<section id="tests">
+  <div class="wrap">
+    <h2>Nachweis statt Versprechen</h2>
+    <p class="lead">Alle Erkennungslogik ist gegen echte Faelle getestet —
+       darunter der dokumentierte Vorfall vom 14.11.2026.</p>
+    <div class="grid g2">
+      <div class="card">
+        <h3>C-Kern</h3>
+        <div class="code">$ ctest --test-dir build --output-on-failure
+Test #1 core ........ Passed
+Test #2 cli_tests .. Passed
+100% tests passed, 0 failed</div>
+      </div>
+      <div class="card">
+        <h3>Interop (C# ↔ C-DLL)</h3>
+        <div class="code">$ dotnet run -c Release
+Vorfall  -> alarm=1 reaktiviert=1 ausnahme=1
+Kontrolle -> alarm=0
+INTEROP OK</div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3>Der reale Fund, den das Tool abbildet</h3>
+      <div class="code">17:43:55  1116  Trojan:Win32/Occamy!rfn erkannt   (steam_api64.dll)
+17:44:15  1117  Aktion: Quarantaeune
+17:48:44  1009  aus Quarantaeune wiederhergestellt   &lt;-- Installer
+17:48:45  5007  Defender-Ausnahme fuer dieselbe Datei &lt;-- Scanner blindgeschaltet</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Haeufige Fragen</h2>
+    <div class="grid g2">
+      <div class="card"><h3>Ersetzt das einen Virenschutz?</h3>
+        <p>Nein. Es ergaenzt Defender/Malwarebytes um eine Schicht, die genau das
+           Muster erkennt, das normale Scanner nicht als Ganzes werten.</p></div>
+      <div class="card"><h3>Warum nur Windows?</h3>
+        <p>Die Repack- und Scam-Kette verteilt Windows-Programme. Der C-Kern selbst
+           ist portabel; die Windows-Anbindung (Eventlog, Tray) ist es nicht.</p></div>
+      <div class="card"><h3>Funktioniert das gegen alle Trojaner?</h3>
+        <p>Nein — gegen das dokumentierte Muster (Quarantaeune-Restore +
+           Defender-Ausnahme) und gegen bekannte Scam-Domains. Es ist ein
+           Spezialwerkzeug, ehrlich benannt.</p></div>
+      <div class="card"><h3>Wie kann ich helfen?</h3>
+        <p>Scam-Domains in <code>data/domains.json</code> ergaenzen, Faelle melden
+           oder die Erweiterung auf eure Community bringen.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap row">
+    <div>
+      <strong>RepackGuard</strong> · MIT-Lizenz · C-Kern, C#-Tray, Browser-Erweiterung
+      <div style="margin-top:6px">Kein Ersatz fuer Vorsicht: keine Cracks, Mods oder Cheats
+        aus unbekannten Quellen. Passwort-Manager statt Browser-Speicher. 2FA ueberall.</div>
+    </div>
+    <div>
+      <a href="https://github.com/DEIN-NUTZERNAME/RepackGuard">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
