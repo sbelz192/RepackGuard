@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>RepackGuard Link Guard — Warnung</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+         background:#0b1220; color:#e5e9f0; display:flex; min-height:100vh;
+         align-items:center; justify-content:center; padding:24px; }
+  .card { max-width:560px; width:100%; background:#131c2e; border:1px solid #26324a;
+          border-radius:16px; padding:28px; box-shadow:0 12px 40px rgba(0,0,0,.4); }
+  h1 { margin:0 0 6px; font-size:22px; color:#7dd3fc; }
+  .why { color:#fbbf24; font-size:14px; margin:0 0 18px; }
+  .url { background:#0b1220; border:1px solid #26324a; border-radius:10px;
+         padding:12px; font-size:13px; word-break:break-all; color:#cbd5e1; }
+  p { color:#aab4c6; font-size:14px; line-height:1.55; }
+  .btns { display:flex; gap:12px; margin-top:22px; flex-wrap:wrap; }
+  button { border:0; border-radius:10px; padding:12px 18px; font-size:15px;
+           cursor:pointer; font-weight:600; }
+  .back { background:#2563eb; color:#fff; }
+  .go { background:transparent; color:#f87171; border:1px solid #7f1d1d; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>RepackGuard Link Guard</h1>
+  <p class="why" id="why"></p>
+  <div class="url" id="to"></div>
+  <p style="margin-top:18px">
+    Diese Adresse gehoert zu einer bekannten Betrugsmasche (z.&nbsp;B. Mr-Beast-Giveaway,
+    Fake-Casino). Solche Seiten versuchen haeufig, deine Discord-Anmeldung, einen
+    Wallet-Zugang oder eine Datei zu stehlen.
+  </p>
+  <div class="btns">
+    <button class="back" id="back">Zurueck (empfohlen)</button>
+    <button class="go" id="go">Trotzdem oeffnen</button>
+  </div>
+</div>
+<script>
+  const q = new URLSearchParams(location.search);
+  const to = q.get('to') || '';
+  const why = q.get('why') || 'Unbekannter Grund';
+  document.getElementById('why').textContent = why;
+  document.getElementById('to').textContent = to;
+  document.getElementById('back').onclick = () => history.length > 1 ? history.back() : chrome.tabs.remove(null);
+  document.getElementById('go').onclick = () => {
+    if (!to) return;
+    chrome.runtime.sendMessage({ type: 'bypass', url: to }, () => { location.href = to; });
+  };
+</script>
+</body>
+</html>

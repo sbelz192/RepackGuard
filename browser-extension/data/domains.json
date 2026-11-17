@@ -1,0 +1,19 @@
+{
+  "updated": "2026-11-17",
+  "note": "Bekannte Scam-Domains. Ergaenzen via GitHub-Issue. Heuristik ist bewusst konservativ.",
+  "domains": [
+    "runicwin.com",
+    "voxwin.cc"
+  ],
+  "patterns": [
+    "fitgirl-repacks",
+    "fitgirlrepacks",
+    "fitgirlrepack",
+    "dodi-repacks",
+    "mrbeast-giveaway",
+    "free-robux",
+    "robux-generator"
+  ],
+  "risky_tlds": [".cc", ".xyz", ".to", ".top", ".site", ".shop", ".live", ".fun"],
+  "risky_keywords": ["giveaway", "claim", "casino", "crypto", "robux", "free-nitro", "mrbeast"]
+}

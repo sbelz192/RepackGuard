@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "RepackGuard Link Guard",
+  "version": "0.1.0",
+  "description": "Warnt vor Scam-Links (Mr-Beast-Giveaways, Fake-Casinos, Raubkopier-Repos), bevor sie sich ausfuehren.",
+  "permissions": ["webNavigation", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "web_accessible_resources": [
+    { "resources": ["data/domains.json"], "matches": ["<all_urls>"] }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "128": "icons/icon.png" },
+    "default_title": "RepackGuard Link Guard"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://discord.com/*", "*://*.discord.com/*", "*://canary.discord.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": { "128": "icons/icon.png" }
+}
