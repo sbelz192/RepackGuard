@@ -90,7 +90,7 @@
     <h1>Erkennt, wenn Installer den<br>Virenschutz aushebeln</h1>
     <p class="sub">
       RepackGuard ist ein Watchdog für die Kette hinter dem Mr-Beast-Scam und
-      aehnlichen Repack-Infektionen: Er meldet in Echtzeit, wenn Schadsoftware
+      ähnlichen Repack-Infektionen: Er meldet in Echtzeit, wenn Schadsoftware
       den Microsoft Defender blendet — und warnt vor Scam-Links, bevor sie laden.
     </p>
     <div class="cta">
@@ -111,55 +111,55 @@
     <h2>Das Problem: Der Trojaner ist nur der Anfang</h2>
     <p class="lead">
       Ein Infostealer-Download (Crack, Mod, Cheat, „Robux-Generator") entwendet
-      Browser-Passwoerter und den Discord-Session-Token. Damit meldet sich der
+      Browser-Passwörter und den Discord-Session-Token. Damit meldet sich der
       Angreifer im eigenen Account an — <strong>ohne Passwort, 2FA wird umgangen</strong> —
       und lasst automatisch Scam-Nachrichten an alle Freunde verschicken. Jeder
       Klick auf den Link startet die Kette von vorn. Der Betroffene wird selbst
       zum Verbreiter.
     </p>
     <div class="chain">
-      <div class="step bad"><h4>Infektion</h4><p>Datei herunterladen und ausfuehren. Infostealer laeuft, oft ohne Symptome.</p></div>
-      <div class="step bad"><h4>Diebstahl</h4><p>Session-Token und Cookies werden ausgelesen — 2FA nuetzt nichts.</p></div>
+      <div class="step bad"><h4>Infektion</h4><p>Datei herunterladen und ausführen. Infostealer läuft, oft ohne Symptome.</p></div>
+      <div class="step bad"><h4>Diebstahl</h4><p>Session-Token und Cookies werden ausgelesen — 2FA nützt nichts.</p></div>
       <div class="step bad"><h4>Uebernahme</h4><p>Angreifer nutzt den Token, um sich im eigenen Account anzumelden.</p></div>
       <div class="step bad"><h4>Verbreitung</h4><p>Automatische Scam-Nachrichten an alle Freunde und Server.</p></div>
     </div>
     <div class="note" style="margin-top:22px">
-      Haeufiger Trick des Installers: Die Schaddatei wird erkannt, dann
-      <strong>aus der Quarantaeune zurueckgeholt</strong> und der Defender fuer genau
+      Häufiger Trick des Installers: Die Schadsoftware-Datei wird erkannt, dann
+      <strong>aus der Quarantäne zurückgeholt</strong> und der Defender für genau
       diese Datei <strong>ausgeblendet</strong>. Genau dieses Muster erkennt RepackGuard.
     </div>
   </div>
 </section>
 
-<section id="loesung">
+<section id="lösung">
   <div class="wrap">
-    <h2>Die Loesung in drei Bausteinen</h2>
-    <p class="lead">Ein portabler Erkennungskern in C, eine Desktop-App fuer den
-       direkten Schutz und eine Browser-Erweiterung fuer die indirekten Opfer.</p>
+    <h2>Die Lösung in drei Bausteinen</h2>
+    <p class="lead">Ein portabler Erkennungskern in C, eine Desktop-App für den
+       direkten Schutz und eine Browser-Erweiterung für die indirekten Opfer.</p>
     <div class="grid g3">
       <div class="card">
         <h3>Desktop-Tray</h3>
-        <p>Laeuft im Hintergrund, liest das Defender-Eventlog und ruft den C-Kern
-           per P/Invoke auf. Bei AV-Manipulation: Alarm-Popup mit Sofortmassnahmen
-           (Discord-Sitzungen beenden, Passwoerter aendern, Scan starten).</p>
+        <p>Läuft im Hintergrund, liest das Defender-Eventlog und ruft den C-Kern
+           per P/Invoke auf. Bei AV-Manipulation: Alarm-Popup mit Sofortmaßnahmen
+           (Discord-Sitzungen beenden, Passwörter ändern, Scan starten).</p>
       </div>
       <div class="card">
         <h3>Link Guard</h3>
-        <p>Browser-Erweiterung (Chrome/Edge/Firefox). Prueft angeklickte Links gegen
+        <p>Browser-Erweiterung (Chrome/Edge/Firefox). Prüft angeklickte Links gegen
            eine Scam-Datenbank und Heuristik und leitet vor der Seite auf eine
-           Warnseite um. Markiert auffaellige Links in Discord Web.</p>
+           Warnseite um. Markiert auffällige Links in Discord Web.</p>
       </div>
       <div class="card">
         <h3>C-Kern (portabel)</h3>
         <p>Die Erkennungslogik als reine Funktion: Liste von Ereignissen rein,
-           Report raus. Unabhaengig von Windows testbar — mit dem realen Vorfall
+           Report raus. Unabhängig von Windows testbar — mit dem realen Vorfall
            als Testfall.</p>
       </div>
     </div>
     <div class="okbox" style="margin-top:20px">
-      Transparente Grenzen: Der Desktop-Client von Discord wird nicht ueberwacht
+      Transparente Grenzen: Der Desktop-Client von Discord wird nicht überwacht
       (technisch nicht sauber abbildbar), und RepackGuard ersetzt keinen
-      Virenschutz. Es ist eine zusaetzliche Schicht — ehrlich verpackt.
+      Virenschutz. Es ist eine zusätzliche Schicht — ehrlich verpackt.
     </div>
   </div>
 </section>
@@ -173,9 +173,9 @@
       <div class="card">
         <h3>1 · Link Guard (Browser)</h3>
         <p>Chrome/Edge: <code>chrome://extensions</code> → Entwicklermodus →
-           „Entpackte Erweiterung laden“ → Ordner <code>browser-extension</code> waehlen.</p>
+           „Entpackte Erweiterung laden“ → Ordner <code>browser-extension</code> wählen.</p>
         <p>Firefox: <code>about:debugging</code> → „Firefox“ → „Eigene Erweiterungen laden“
-           → <code>manifest.json</code> waehlen.</p>
+           → <code>manifest.json</code> wählen.</p>
       </div>
       <div class="card">
         <h3>2 · Desktop-Tray (Windows)</h3>
@@ -201,7 +201,7 @@ bin/Release/net10.0-windows/RepackGuard.exe</div>
 <section id="tests">
   <div class="wrap">
     <h2>Nachweis statt Versprechen</h2>
-    <p class="lead">Alle Erkennungslogik ist gegen echte Faelle getestet —
+    <p class="lead">Alle Erkennungslogik ist gegen echte Fälle getestet —
        darunter der dokumentierte Vorfall vom 14.11.2026.</p>
     <div class="grid g2">
       <div class="card">
@@ -222,29 +222,29 @@ INTEROP OK</div>
     <div class="card" style="margin-top:18px">
       <h3>Der reale Fund, den das Tool abbildet</h3>
       <div class="code">17:43:55  1116  Trojan:Win32/Occamy!rfn erkannt   (steam_api64.dll)
-17:44:15  1117  Aktion: Quarantaeune
-17:48:44  1009  aus Quarantaeune wiederhergestellt   &lt;-- Installer
-17:48:45  5007  Defender-Ausnahme fuer dieselbe Datei &lt;-- Scanner blindgeschaltet</div>
+17:44:15  1117  Aktion: Quarantäne
+17:48:44  1009  aus Quarantäne wiederhergestellt   &lt;-- Installer
+17:48:45  5007  Defender-Ausnahme für dieselbe Datei &lt;-- Scanner blindgeschaltet</div>
     </div>
   </div>
 </section>
 
 <section id="faq">
   <div class="wrap">
-    <h2>Haeufige Fragen</h2>
+    <h2>Häufige Fragen</h2>
     <div class="grid g2">
       <div class="card"><h3>Ersetzt das einen Virenschutz?</h3>
-        <p>Nein. Es ergaenzt Defender/Malwarebytes um eine Schicht, die genau das
+        <p>Nein. Es ergänzt Defender/Malwarebytes um eine Schicht, die genau das
            Muster erkennt, das normale Scanner nicht als Ganzes werten.</p></div>
       <div class="card"><h3>Warum nur Windows?</h3>
         <p>Die Repack- und Scam-Kette verteilt Windows-Programme. Der C-Kern selbst
            ist portabel; die Windows-Anbindung (Eventlog, Tray) ist es nicht.</p></div>
       <div class="card"><h3>Funktioniert das gegen alle Trojaner?</h3>
-        <p>Nein — gegen das dokumentierte Muster (Quarantaeune-Restore +
+        <p>Nein — gegen das dokumentierte Muster (Quarantäne-Restore +
            Defender-Ausnahme) und gegen bekannte Scam-Domains. Es ist ein
            Spezialwerkzeug, ehrlich benannt.</p></div>
       <div class="card"><h3>Wie kann ich helfen?</h3>
-        <p>Scam-Domains in <code>data/domains.json</code> ergaenzen, Faelle melden
+        <p>Scam-Domains in <code>data/domains.json</code> ergänzen, Fälle melden
            oder die Erweiterung auf eure Community bringen.</p></div>
     </div>
   </div>
@@ -254,8 +254,8 @@ INTEROP OK</div>
   <div class="wrap row">
     <div>
       <strong>RepackGuard</strong> · MIT-Lizenz · C-Kern, C#-Tray, Browser-Erweiterung
-      <div style="margin-top:6px">Kein Ersatz fuer Vorsicht: keine Cracks, Mods oder Cheats
-        aus unbekannten Quellen. Passwort-Manager statt Browser-Speicher. 2FA ueberall.</div>
+      <div style="margin-top:6px">Kein Ersatz für Vorsicht: keine Cracks, Mods oder Cheats
+        aus unbekannten Quellen. Passwort-Manager statt Browser-Speicher. 2FA überall.</div>
     </div>
     <div>
       <a href="https://github.com/sbelz192/RepackGuard">GitHub</a>

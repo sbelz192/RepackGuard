@@ -1,29 +1,41 @@
-# RepackGuard Link Guard (Browser-Erweiterung)
+# RepackGuard Link Guard
 
-Warnt, **bevor** eine betruegerische Seite laedt. Gegen die Kette des
-Mr-Beast-Scams: Ein Link in einer Nachricht (Discord, Mail, Forum) — Klick —
+Link Guard ist eine Browser-Erweiterung (Chrome, Edge, Firefox), die **warnt,
+bevor** eine betrügerische Seite lädt.
+
+Geschützt wird vor der Kette hinter dem Mr-Beast-Scam und ähnlichen
+Repack-Infektionen: ein Link in einer Nachricht — Klick —
 Fake-Casino/Giveaway — Download oder Phishing.
 
-## Was sie tut
+## Was die Erweiterung tut
 
-- Prueft jede angeklickte URL gegen `data/domains.json` (bekannte Scam-Domains
-  und Domain-Muster) und leitet auf eine Warnseite um.
-- Heuristik (riskante TLD + Schluesselwort) markiert auffaellige Links in
-  **Discord Web** direkt im Chat.
-- Zaehlt blockierte Versuche (Popup).
-- „Trotzdem oeffnen" ist moeglich, aber bewusst: einmal pro Minute freigeben.
+- Sie prüft jede angeklickte Adresse gegen `data/domains.json` (bekannte
+  Scam-Domains und Domain-Muster) und leitet auf eine Warnseite um.
+- Eine Heuristik (riskante Domain-Endung plus Schlüsselwort) markiert
+  auffällige Links in **Discord Web** direkt im Chat.
+- Blockierte Versuche werden gezählt und im Popup angezeigt.
+- „Trotzdem öffnen“ ist möglich, aber bewusst eingeschränkt: einmal pro
+  Minute freigebbar.
 
 ## Was sie nicht tut
 
-- Nichts im Discord-**Desktop-Client** (nur Browser/Web).
-- Kein Schutz vor Dateien, die trotzdem geladen und ausgefuehrt werden.
-- Keine Pruefung von Inhalten, nur von Domains/Mustern.
+- Sie greift **nicht** im Discord-**Desktop-Client**, nur im Browser.
+- Sie schützt nicht vor Dateien, die trotzdem heruntergeladen und ausgeführt
+  werden.
+- Sie prüft keine Seiteninhalte, nur Domains und Muster.
 
-## Installieren (Chrome/Edge)
+## Installieren
 
-1. `chrome://extensions` oeffnen, „Entwicklermodus" aktivieren.
-2. „Entpackte Erweiterung laden“ -> Ordner `browser-extension` waehlen.
-3. Test: `https://runicwin.com/claim` aufrufen -> Warnseite erscheint.
+**Chrome/Edge**
+
+1. `chrome://extensions` öffnen, „Entwicklermodus“ aktivieren.
+2. „Entpackte Erweiterung laden“ → Ordner `browser-extension` wählen.
+3. Test: `https://runicwin.com/claim` aufrufen — die Warnseite erscheint.
+
+**Firefox**
+
+1. `about:debugging` → „Dieser Firefox“ → „Temporäre Erweiterung laden“.
+2. Die Datei `browser-extension/manifest.json` wählen.
 
 ## Testen
 
@@ -31,7 +43,21 @@ Fake-Casino/Giveaway — Download oder Phishing.
 node test-rules.js
 ```
 
+Erwartet: `ALLE OK`.
+
+## Dateien
+
+| Datei | Zweck |
+|---|---|
+| `manifest.json` | Erweiterungs-Konfiguration (MV3) |
+| `background.js` | Prüft Navigationen, leitet bei Alarm um |
+| `content.js` | Markiert auffällige Links in Discord Web |
+| `shared/rules.js` | Gemeinsame Regel-Engine (auch für zukünftige Bausteine) |
+| `data/domains.json` | Blockliste (bekannte Scam-Domains) |
+| `data/candidates.json` | Ungeprüfte Kandidaten aus dem URLhaus-Export |
+| `warn.html` | Warnseite |
+
 ## Mitmachen
 
-Ergaenze Domains/Muster in `data/domains.json` (GitHub-Issue oder PR).
-Die Datenbank liegt ggf. spaeter geteilt mit der Desktop-Anwendung neben.
+Ergänze Domains oder Muster in `data/domains.json` (Issue oder Pull Request).
+Die Datenbank wird ggf. später mit der Desktop-Anwendung geteilt.
