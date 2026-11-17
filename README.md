@@ -1,12 +1,11 @@
 # RepackGuard
 
-RepackGuard erkennt das Moment, in dem ein Installer den Microsoft Defender
+RepackGuard erkennt den Moment, in dem ein Installer den Microsoft Defender
 aushebelt — und warnt, **bevor** der Schaden weitergeht.
 
 Hintergrund ist eine reale Infektion vom 14.11.2026: Eine Repack-Installation
 (Dark Souls II, DODI-Repacks) enthielt `steam_api64.dll` mit dem Trojaner
-`Trojan:Win32/Occamy!rfn`. Der Defender erkannte die Datei und verschiebte sie
-in die Quarantäne. Drei Minuten später geschah Folgendes:
+`Trojan:Win32/Occamy!rfn`. Der Defender erkannte die Datei, aber der User fügte eine Ausnahme hinzu.:
 
 ```
 17:43:55  1116  Trojan:Win32/Occamy!rfn erkannt   (steam_api64.dll)
