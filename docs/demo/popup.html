@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>RepackGuard — Popup</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; min-height:100vh; background:radial-gradient(800px 400px at 50% 10%,#132545,#0b1220);
+         display:flex; align-items:center; justify-content:center;
+         font-family: system-ui, sans-serif; color:#e5e9f0; }
+  .popup { width:340px; background:#131c2e; border:1px solid #26324a; border-radius:14px;
+           overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.5); }
+  .h { padding:16px 18px; border-bottom:1px solid #26324a; display:flex;
+       align-items:center; gap:10px; }
+  .h img { width:26px; height:26px; border-radius:7px; }
+  .h b { color:#7dd3fc; font-size:15px; }
+  .b { padding:16px 18px; }
+  .n { font-size:34px; color:#fbbf24; font-weight:800; }
+  .lbl { color:#aab4c6; font-size:13px; margin-top:2px; }
+  .bar { margin-top:16px; height:8px; background:#0b1220; border-radius:99px; overflow:hidden; }
+  .bar i { display:block; width:74%; height:100%; background:linear-gradient(90deg,#38bdf8,#2563eb); }
+  .t { color:#aab4c6; font-size:12px; margin-top:10px; }
+</style>
+</head>
+<body>
+  <div class="popup">
+    <div class="h"><img src="../icon.png" alt=""><b>RepackGuard Link Guard</b></div>
+    <div class="b">
+      <div class="n">3</div>
+      <div class="lbl">blockierte Scam-Links</div>
+      <div class="bar"><i></i></div>
+      <div class="t">Die Erweiterung warnt, bevor eine betrügerische Seite geladen wird.</div>
+    </div>
+  </div>
+</body>
+</html>
