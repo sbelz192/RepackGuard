@@ -1,0 +1,17 @@
+# Build-Artefakte
+build/
+out/
+*.o
+*.obj
+*.exe
+*.ilk
+*.pdb
+
+# Test-Ausgaben
+testdata/.incident.out
+testdata/.control.out
+
+# Editor
+.vs/
+.vscode/
+*.user
