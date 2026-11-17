@@ -15,6 +15,17 @@ add_compile_options(-Wall -Wextra)
 add_library(rg_core STATIC src/rg_core.c)
 target_include_directories(rg_core PUBLIC src)
 
+# Windows-DLL fuer P/Invoke (C#-Bridge)
+if(WIN32)
+    add_library(rg_core_dll SHARED src/rg_exports.c src/rg_core.c)
+    target_include_directories(rg_core_dll PUBLIC src)
+    set_target_properties(rg_core_dll PROPERTIES
+        OUTPUT_NAME rg_core
+        PREFIX ""
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+    target_compile_definitions(rg_core_dll PRIVATE RG_BUILDING_DLL)
+endif()
+
 # CLI
 add_executable(rg_cli src/rg_cli.c)
 target_link_libraries(rg_cli PRIVATE rg_core)

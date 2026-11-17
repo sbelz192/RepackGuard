@@ -1,0 +1,15 @@
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\RepackGuard.Tray.GeneratedMSBuildEditorConfig.editorconfig
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\RepackGuard.Tray.AssemblyInfoInputs.cache
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\RepackGuard.Tray.AssemblyInfo.cs
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\RepackGuard.Tray.csproj.CoreCompileInputs.cache
+D:\RepackGuard\bridge\RepackGuard.Tray\bin\Release\net10.0-windows\RepackGuard.exe
+D:\RepackGuard\bridge\RepackGuard.Tray\bin\Release\net10.0-windows\RepackGuard.deps.json
+D:\RepackGuard\bridge\RepackGuard.Tray\bin\Release\net10.0-windows\RepackGuard.runtimeconfig.json
+D:\RepackGuard\bridge\RepackGuard.Tray\bin\Release\net10.0-windows\RepackGuard.dll
+D:\RepackGuard\bridge\RepackGuard.Tray\bin\Release\net10.0-windows\RepackGuard.pdb
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\RepackGuard.dll
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\refint\RepackGuard.dll
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\RepackGuard.pdb
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\RepackGuard.Tray.genruntimeconfig.cache
+D:\RepackGuard\bridge\RepackGuard.Tray\obj\Release\net10.0-windows\ref\RepackGuard.dll
+D:\RepackGuard\bridge\RepackGuard.Tray\bin\Release\net10.0-windows\rg_core.dll

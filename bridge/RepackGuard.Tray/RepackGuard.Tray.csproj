@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>RepackGuard</AssemblyName>
+    <RootNamespace>RepackGuard.Tray</RootNamespace>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Die C-Kern-DLL muss neben der exe liegen (P/Invoke) -->
+    <None Include="..\..\build\rg_core.dll"
+          Condition="Exists('..\..\build\rg_core.dll')"
+          CopyToOutputDirectory="PreserveNewest" Link="rg_core.dll" />
+  </ItemGroup>
+
+</Project>

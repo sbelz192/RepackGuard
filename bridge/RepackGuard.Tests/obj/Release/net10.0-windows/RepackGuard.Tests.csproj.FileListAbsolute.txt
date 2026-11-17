@@ -1,0 +1,14 @@
+D:\RepackGuard\bridge\RepackGuard.Tests\bin\Release\net10.0-windows\RepackGuard.Tests.exe
+D:\RepackGuard\bridge\RepackGuard.Tests\bin\Release\net10.0-windows\RepackGuard.Tests.deps.json
+D:\RepackGuard\bridge\RepackGuard.Tests\bin\Release\net10.0-windows\RepackGuard.Tests.runtimeconfig.json
+D:\RepackGuard\bridge\RepackGuard.Tests\bin\Release\net10.0-windows\RepackGuard.Tests.dll
+D:\RepackGuard\bridge\RepackGuard.Tests\bin\Release\net10.0-windows\RepackGuard.Tests.pdb
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\RepackGuard.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\RepackGuard.Tests.AssemblyInfoInputs.cache
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\RepackGuard.Tests.AssemblyInfo.cs
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\RepackGuard.Tests.csproj.CoreCompileInputs.cache
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\RepackGuard.Tests.dll
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\refint\RepackGuard.Tests.dll
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\RepackGuard.Tests.pdb
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\RepackGuard.Tests.genruntimeconfig.cache
+D:\RepackGuard\bridge\RepackGuard.Tests\obj\Release\net10.0-windows\ref\RepackGuard.Tests.dll
