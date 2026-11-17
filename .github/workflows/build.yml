@@ -1,0 +1,95 @@
+name: Build und Release
+
+on:
+  push:
+    branches: [master]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Quelltext laden
+        uses: actions/checkout@v4
+
+      # --- C-Werkzeuge (gcc, cmake, ninja) ---------------------------------
+      - name: MSYS2 einrichten
+        uses: msys2/setup-msys2@v2
+        with:
+          release: false
+          update: true
+          install: >-
+            gcc
+            cmake
+            ninja
+            make
+
+      # --- C-Kern, DLL, CLI, Tests ----------------------------------------
+      - name: C-Kern bauen
+        shell: msys2 {0}
+        run: |
+          cmake -S . -B build -G "MinGW Makefiles"
+          cmake --build build
+
+      - name: C-Tests
+        shell: msys2 {0}
+        run: ctest --test-dir build --output-on-failure
+
+      - name: Link-Guard-Tests
+        run: node browser-extension/test-rules.js
+
+      # --- Desktop-Anwendung ---------------------------------------------
+      - name: .NET einrichten
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Interop-Tests
+        run: |
+          cd bridge/RepackGuard.Tests
+          dotnet run -c Release
+
+      - name: RepackGuard.exe (self-contained)
+        run: |
+          cd bridge/RepackGuard.Tray
+          dotnet publish -c Release -r win-x64 --self-contained true -o publish
+
+      # --- Installer -------------------------------------------------------
+      - name: Inno Setup installieren
+        run: choco install innosetup -y --no-progress
+
+      - name: Installer erzeugen
+        run: |
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer/RepackGuard.iss
+          dir dist
+
+      # --- Signierung (nach SignPath-Bewerbung aktivieren) -----------------
+      # - name: Signieren (SignPath)
+      #   uses: signpath/github-action-submit-signing-request@main
+      #   with:
+      #     organization-id: ${{ secrets.SIGNPATH_ORGANIZATION_ID }}
+      #     project: RepackGuard
+      #     signing-policy: release
+      #     artifact: dist/RepackGuard-0.1.0-Setup.exe
+      #     api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+
+      # --- Artefakte -------------------------------------------------------
+      - name: Artefakte hochladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: repackguard-build
+          path: |
+            dist/RepackGuard-0.1.0-Setup.exe
+            build/rg_core.dll
+          if-no-files-found: warn
+
+      - name: GitHub-Release (nur bei Tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/RepackGuard-0.1.0-Setup.exe
+            build/rg_core.dll
