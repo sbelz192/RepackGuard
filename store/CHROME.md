@@ -18,7 +18,6 @@ betrügerische Domains und leitet vor dem Laden auf eine Warnseite um.
 Funktionen:
 • Prüft angeklickte Adressen gegen eine lokale Scam-Datenbank
 • Zeigt eine Warnseite statt der betrügerischen Seite
-• Markiert auffällige Links in Discord Web direkt im Chat
 • Zählt blockierte Versuche lokal
 
 Datenschutz:
@@ -61,7 +60,6 @@ Link zu `store/PRIVACY.md` (als Seite hosten, z. B. GitHub Pages).
 Chrome verlangt mindestens ein Screenshot (1280×800 oder 640×400). Sinnvoll:
 1. Warnseite bei `https://runicwin.com/claim`
 2. Erweiterung im Chrome-Menü / Popup mit Zähler
-3. Markierung eines Links in Discord Web
 
 ## Veröffentlichung
 

@@ -80,7 +80,7 @@ liefert einen Report. Dadurch ist die Erkennung logbar, testbar und portierbar.
 
 Die Browser-Erweiterung (Chrome, Edge, Firefox) prüft angeklickte Links gegen
 die Scam-Datenbank und die Heuristik und leitet vor dem Laden auf eine
-Warnseite um. In Discord Web werden auffällige Links zusätzlich markiert.
+Warnseite um.
 
 Installieren: `chrome://extensions` → Entwicklermodus → „Entpackte Erweiterung
 laden“ → Ordner `browser-extension`.

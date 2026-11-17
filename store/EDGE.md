@@ -18,7 +18,6 @@ betrügerische Domains und leitet vor dem Laden auf eine Warnseite um.
 Funktionen:
 • Prüft angeklickte Adressen gegen eine lokale Scam-Datenbank
 • Zeigt eine Warnseite statt der betrügerischen Seite
-• Markiert auffällige Links in Discord Web direkt im Chat
 • Zählt blockierte Versuche lokal
 
 Datenschutz: keine Datensammlung, keine Telemetrie, keine Übertragung.

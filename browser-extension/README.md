@@ -11,8 +11,6 @@ Fake-Casino/Giveaway — Download oder Phishing.
 
 - Sie prüft jede angeklickte Adresse gegen `data/domains.json` (bekannte
   Scam-Domains und Domain-Muster) und leitet auf eine Warnseite um.
-- Eine Heuristik (riskante Domain-Endung plus Schlüsselwort) markiert
-  auffällige Links in **Discord Web** direkt im Chat.
 - Blockierte Versuche werden gezählt und im Popup angezeigt.
 - „Trotzdem öffnen“ ist möglich, aber bewusst eingeschränkt: einmal pro
   Minute freigebbar.
@@ -51,7 +49,7 @@ Erwartet: `ALLE OK`.
 |---|---|
 | `manifest.json` | Erweiterungs-Konfiguration (MV3) |
 | `background.js` | Prüft Navigationen, leitet bei Alarm um |
-| `content.js` | Markiert auffällige Links in Discord Web |
+| `content.js` | Reserviert: Link-Markierung (experimentell, nicht beworben) |
 | `shared/rules.js` | Gemeinsame Regel-Engine (auch für zukünftige Bausteine) |
 | `data/domains.json` | Blockliste (bekannte Scam-Domains) |
 | `data/candidates.json` | Ungeprüfte Kandidaten aus dem URLhaus-Export |
