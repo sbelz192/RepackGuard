@@ -32,6 +32,12 @@
   .btn-p{background:linear-gradient(180deg,var(--blue),var(--blue2));color:#04101f}
   .btn-g{background:transparent;color:var(--txt);border-color:var(--line)}
   .btn:hover{filter:brightness(1.08)}
+  .btn-s{background:linear-gradient(180deg,#ff86b8,#ff4d8d);color:#2b0a18;
+          display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+          font-weight:700;padding:14px 24px;border-radius:12px;border:1px solid transparent}
+  .btn-o{background:transparent;color:#ffb3cd;border-color:#7a2745;
+          display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+          font-weight:600;padding:14px 24px;border-radius:12px}
 
   section{padding:56px 0;border-top:1px solid var(--line)}
   h2{font-size:clamp(22px,3.2vw,32px);margin:0 0 8px;letter-spacing:-.01em}
@@ -272,11 +278,20 @@ INTEROP OK</div>
       </div>
     </div>
     <div class="cta" style="margin-top:26px">
-      <a class="btn btn-p" href="DEINE-SPENDEN-URL">Spenden (kommt in Kürze)</a>
+      <a class="btn btn-s" href="https://github.com/sponsors/sbelz192">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 21s-7.5-4.9-9.7-9.2C.6 8.2 2.6 4.5 6.2 4.1c2-.2 3.7.7 4.8 2.2h2c1.1-1.5 2.8-2.4 4.8-2.2 3.6.4 5.6 4.1 3.9 7.7C19.5 16.1 12 21 12 21z"/>
+        </svg>
+        Über GitHub Sponsors unterstützen
+      </a>
+      <a class="btn btn-o" href="https://github.com/sponsors/sbelz192?frequency=one-time">
+        Einmalig spenden
+      </a>
     </div>
     <p class="lead" style="margin-top:14px;font-size:13px">
-      Jede Spende wird veröffentlicht und für die genannten Zwecke verwendet.
-      Der quelloffene Code bleibt davon unberührt.
+      Monatlich oder einmalig — über GitHub Sponsors (Stripe). Jede Spende wird
+      veröffentlicht und für die genannten Zwecke verwendet. Der quelloffene
+      Code bleibt davon unberührt.
     </p>
   </div>
 </section>
