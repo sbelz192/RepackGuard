@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "RepackGuard Link Guard",
+  "version": "0.1.0",
+  "description": "Warnt vor Scam-Links, bevor sie laden.",
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "shared/rules.js",
+      "background.js"
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://discord.com/*",
+        "*://*.discord.com/*",
+        "*://canary.discord.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "repackguard-link-guard@localhost",
+      "strict_min_version": "115.0"
+    }
+  },
+  "icons": {
+    "128": "icons/icon.png"
+  }
+}
