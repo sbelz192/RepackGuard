@@ -32,6 +32,20 @@ PATTERNS = [
 ]
 RISKY_TLDS = [".cc", ".xyz", ".to", ".top", ".site", ".shop", ".live", ".fun"]
 
+# Plattformen, auf denen Scam-Payloads hausen duerfen wir NICHT blocken:
+# eine Blockade dieser Domains waere eine Katastrophe (False Positives).
+PLATFORMS = [
+    "github.com", "githubusercontent.com", "gitlab.com", "bitbucket.org",
+    "drive.google.com", "googleusercontent.com", "dropbox.com", "onedrive.live.com",
+    "mediafire.com", "mega.nz", "discordapp.com", "discord.com", "discord.gg",
+    "cdn.discordapp.com", "pastebin.com", "tinyurl.com", "bit.ly", "t.co",
+    "youtube.com", "youtu.be", "tiktok.com", "facebook.com", "instagram.com",
+    "telegram.org", "t.me", "wetransfer.com", "sendspace.com", "4shared.com",
+]
+
+FIELDS = ["id", "dateadded", "url", "url_status", "last_online",
+          "threat", "tags", "urlhaus_link", "reporter"]
+
 
 def load_key(argv):
     if "--key" in argv:
@@ -46,8 +60,20 @@ def load_key(argv):
 
 def fetch(url, timeout=60):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", "replace")
+    except Exception as e:
+        # MinGW-Python hat oft kein CA-Bundle; curl nutzt den System-Store.
+        print("  urllib fehlgeschlagen (" + type(e).__name__ + "), nutze curl ...")
+        import subprocess
+        out = subprocess.run(
+            ["curl", "-sS", "--fail", "--max-time", str(timeout),
+             "-A", UA, url],
+            capture_output=True, text=True, timeout=timeout + 10)
+        if out.returncode != 0:
+            raise RuntimeError("curl-Fehler: " + (out.stderr or "").strip())
+        return out.stdout
 
 
 def domain_of(url):
@@ -65,7 +91,11 @@ def main(argv):
 
     print("Lade URLhaus-Export ...")
     raw = fetch(EXPORT.format(key=key))
-    rows = list(csv.DictReader(io.StringIO(raw)))
+    # Der Dump beginnt mit einem # -Kommentarblock; die echte Kopfzeile
+    # existiert nicht, sie ist als Kommentar eingebettet. Wir setzen die
+    # Spalten daher fest.
+    clean = "\n".join(l for l in raw.splitlines() if not l.startswith("#"))
+    rows = list(csv.DictReader(io.StringIO(clean), fieldnames=FIELDS))
     print("Eintraege gesamt:", len(rows))
 
     seen = set()
@@ -73,19 +103,24 @@ def main(argv):
     for r in rows:
         url = (r.get("url") or "").strip()
         status = (r.get("url_status") or "").lower()
-        tags = (r.get("tags") or "").lower()
-        if status and status != "alive":
+        threat = (r.get("threat") or "").lower()
+        if status and status not in ("online", "alive"):
             continue
+        if "phishing" not in threat and "malware" not in threat:
+            continue
+
         dom = domain_of(url)
         if not dom or dom in seen:
             continue
-        if "phishing" not in tags and "malware" not in tags:
+        # Plattform-Hosts nie blocken (Payload liegt nur dort)
+        if any(dom == p or dom.endswith("." + p) for p in PLATFORMS):
             continue
+
         low = dom.lower()
         pat = [p for p in PATTERNS if p in low]
         tld = "." + low.rsplit(".", 1)[-1]
-        risky = tld in RISKY_TLDS
-        if not (pat or (risky and any(k in low for k in ("claim", "win", "free")))):
+        risky = tld in RISKY_TLDS and any(k in low for k in ("claim", "win", "free"))
+        if not (pat or risky):
             continue
         seen.add(dom)
         candidates.append({

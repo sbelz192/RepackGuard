@@ -1,0 +1,35 @@
+{
+  "generated": "2026-11-17 20:52:11 UTC",
+  "source": "urlhaus.abuse.ch v2 export (keyed recent.csv)",
+  "count": 3,
+  "kuratiert": false,
+  "candidates": [
+    {
+      "domain": "bloodcheat.com",
+      "url": "https://bloodcheat.com/api/download/meta-loader",
+      "threat": "malware_download",
+      "tags": "malware,pw-2026,stealer",
+      "reporter": "anonymous",
+      "date": "2026-11-13 08:15:08",
+      "reason": "Muster: cheat"
+    },
+    {
+      "domain": "blueskycheat.com",
+      "url": "https://blueskycheat.com/api/download/meta-loader",
+      "threat": "malware_download",
+      "tags": "malware,pw-2026,stealer",
+      "reporter": "anonymous",
+      "date": "2026-11-13 08:14:09",
+      "reason": "Muster: cheat"
+    },
+    {
+      "domain": "flycheats.xyz",
+      "url": "https://flycheats.xyz/Yeni%20klas%C3%B6r/zerocheat.exe",
+      "threat": "malware_download",
+      "tags": "None",
+      "reporter": "wok",
+      "date": "2026-11-14 12:44:40",
+      "reason": "Muster: cheat"
+    }
+  ]
+}
