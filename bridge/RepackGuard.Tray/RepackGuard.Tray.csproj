@@ -13,6 +13,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Icon liegt eingebettet in der Assembly (kein externes File noetig) -->
+    <EmbeddedResource Include="icon.ico" />
     <!-- Die C-Kern-DLL muss neben der exe liegen (P/Invoke) -->
     <None Include="..\..\build\rg_core.dll"
           Condition="Exists('..\..\build\rg_core.dll')"

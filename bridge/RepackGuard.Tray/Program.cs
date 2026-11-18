@@ -19,7 +19,7 @@ public sealed class TrayApp : ApplicationContext
     {
         _tray = new NotifyIcon
         {
-            Icon = new System.Drawing.Icon("icon.ico"),
+            Icon = LoadAppIcon(),
             Text = "RepackGuard " + Native.Version(),
             Visible = true,
             ContextMenuStrip = BuildMenu()
@@ -28,6 +28,23 @@ public sealed class TrayApp : ApplicationContext
 
         try { StartWatcher(); }
         catch (Exception ex) { Warn("Eventlog nicht lesbar", ex.Message + "\n(RepackGuard braucht ggf. Adminrechte.)"); }
+    }
+
+    private static System.Drawing.Icon LoadAppIcon()
+    {
+        try
+        {
+            var asm = typeof(TrayApp).Assembly;
+            var name = asm.GetManifestResourceNames()
+                .FirstOrDefault(n => n.EndsWith(".ico", StringComparison.OrdinalIgnoreCase));
+            if (name != null)
+            {
+                using var s = asm.GetManifestResourceStream(name);
+                if (s != null) return new System.Drawing.Icon(s);
+            }
+        }
+        catch { /* Fallback auf Datei */ }
+        return new System.Drawing.Icon("icon.ico");
     }
 
     private ContextMenuStrip BuildMenu()
