@@ -1,6 +1,11 @@
-# GitHub Sponsors — Profiltexte
+# GitHub Sponsors — Profiltexte (reiner Text, ohne Rich Text)
 
-## Bio (max. 250 Zeichen)
+Alle Felder als **einfacher Text**: keine Überschriften, kein Fett, keine
+Markdown-Listen. Absätze durch Leerzeilen, Aufzählung mit „-".
+
+---
+
+## Bio (max. 250 Zeichen, einzeilig)
 
 **Variante A (empfohlen):**
 ```
@@ -12,40 +17,41 @@ Baue RepackGuard — einen Open-Source-Watchdog gegen Repack-Infektionen und die
 Entwickle Aeterno (Dark-Fantasy-RPG) und RepackGuard, einen Open-Source-Watchdog gegen Repack- und Scam-Infektionen. Spenden decken Store-Gebühren und Signaturen.
 ```
 
-## Introduction (Rich Text / Markdown)
+---
 
-```markdown
-### Was ich baue
+## Introduction (einfacher Text)
 
-**RepackGuard** — ein Open-Source-Watchdog gegen Repack-Infektionen und die
-Kette hinter dem Mr-Beast-Scam. Er erkennt in Echtzeit, wenn ein Installer den
-Microsoft Defender aushebelt (Quarantäne-Restore + Ausnahme), und warnt vor
+```
+Was ich baue
+
+RepackGuard — ein Open-Source-Watchdog gegen Repack-Infektionen und die Kette
+hinter dem Mr-Beast-Scam. Er erkennt in Echtzeit, wenn ein Installer den
+Microsoft Defender aushebelt (Quarantäne-Restore plus Ausnahme) und warnt vor
 Scam-Seiten, bevor sie laden.
 
-**Aeterno** — ein Dark-Fantasy-RPG, das ich in Unity entwickle.
+Aeterno — ein Dark-Fantasy-RPG, das ich in Unity entwickle.
 
-### Wofür Spenden gut sind
+Wofür Spenden gut sind
 
-- **Chrome Web Store** — die einmalige Registriergebühr (5 $), damit Link Guard
-  auch im Chrome-Store erscheint
-- **Code-Signatur** — für den Windows-Installer (überwiegend kostenlos über
-  die SignPath Foundation, Bewerbung läuft)
-- **Werkzeuge und Infrastruktur** für die Open-Source-Projekte
+- Chrome Web Store: die einmalige Registriergebühr (5 $), damit Link Guard auch
+  im Chrome-Store erscheint.
+- Code-Signatur: für den Windows-Installer (überwiegend kostenlos über die
+  SignPath Foundation, Bewerbung läuft).
+- Werkzeuge und Infrastruktur für die Open-Source-Projekte.
 
-### Warum Open Source
+Warum Open Source
 
-Die Scam-Kette hinter Mr-Beast kostet tausende Nutzer Accounts und Daten.
-RepackGuard macht die Erkennung solcher Muster öffentlich und nachvollziehbar —
+Die Scam-Kette hinter MrBeast kostet tausende Nutzer Accounts und Daten.
+RepackGuard macht die Erkennung solcher Muster öffentlich und nachvollziehbar,
 inklusive Tests gegen einen realen Vorfall.
 
 Jede Spende wird mit Verwendungszweck veröffentlicht.
 ```
 
-## Your Goals (Ziel + Text)
+---
 
-**Betrag:** `5 $` (Chrome-Web-Store-Gebühr)
+## Your Goals (Betrag: 5 $)
 
-**Text:**
 ```
 Erste Lizenzen sichern, dann Aeterno voranbringen.
 
@@ -56,9 +62,10 @@ Aeterno (Dark-Fantasy-RPG): Werkzeuge, Assets und Infrastruktur.
 Jede Spende wird mit Verwendungszweck veröffentlicht.
 ```
 
+---
+
 ## Hinweise
 
-- Die Bio ist bewusst kurz gehalten (Unter 250 Zeichen) und nennt den
-  Verwendungszweck — das schafft Vertrauen.
-- Die Introduction ist Markdown; GitHub Sponsors übernimmt die Formatierung.
-- Keine falschen Versprechungen: keine „100 % Schutz"-Formulierungen.
+- Bio: gemessen 155 bzw. 162 Zeichen (Limit 250).
+- Keine falschen Versprechungen, keine „100 % Schutz"-Formulierungen.
+- Die Beträge und Zwecke stimmen mit dem Projekt überein.
