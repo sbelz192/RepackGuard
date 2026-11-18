@@ -37,17 +37,6 @@
     <button class="go" id="go">Trotzdem öffnen</button>
   </div>
 </div>
-<script>
-  const q = new URLSearchParams(location.search);
-  const to = q.get('to') || '';
-  const why = q.get('why') || 'Unbekannter Grund';
-  document.getElementById('why').textContent = why;
-  document.getElementById('to').textContent = to;
-  document.getElementById('back').onclick = () => history.length > 1 ? history.back() : chrome.tabs.remove(null);
-  document.getElementById('go').onclick = () => {
-    if (!to) return;
-    chrome.runtime.sendMessage({ type: 'bypass', url: to }, () => { location.href = to; });
-  };
-</script>
+<script src="warn.js"></script>
 </body>
 </html>
