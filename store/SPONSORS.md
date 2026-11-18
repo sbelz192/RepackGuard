@@ -41,6 +41,21 @@ inklusive Tests gegen einen realen Vorfall.
 Jede Spende wird mit Verwendungszweck veröffentlicht.
 ```
 
+## Your Goals (Ziel + Text)
+
+**Betrag:** `5 $` (Chrome-Web-Store-Gebühr)
+
+**Text:**
+```
+Erste Lizenzen sichern, dann Aeterno voranbringen.
+
+Die ersten Spenden decken die einmalige Chrome-Web-Store-Gebühr (5 $), damit
+Link Guard auch im Chrome-Store erscheint. Danach fließt der Großteil in
+Aeterno (Dark-Fantasy-RPG): Werkzeuge, Assets und Infrastruktur.
+
+Jede Spende wird mit Verwendungszweck veröffentlicht.
+```
+
 ## Hinweise
 
 - Die Bio ist bewusst kurz gehalten (Unter 250 Zeichen) und nennt den
