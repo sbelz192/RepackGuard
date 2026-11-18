@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — RepackGuard Link Guard</title>
+<style>
+  body{margin:0;background:#0b1220;color:#e5e9f0;
+       font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;padding:48px 22px}
+  .wrap{max-width:760px;margin:0 auto}
+  h1{color:#7dd3fc;font-size:30px;margin:0 0 6px}
+  h2{color:#7dd3fc;font-size:20px;margin:30px 0 8px}
+  .mut{color:#aab4c6}
+  table{border-collapse:collapse;width:100%;margin:14px 0}
+  td,th{border:1px solid #26324a;padding:9px 12px;font-size:14px;vertical-align:top}
+  th{background:#131c2e;text-align:left}
+  code{background:#070d18;border:1px solid #26324a;border-radius:6px;padding:1px 6px;font-size:13px}
+  a{color:#7dd3fc}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Datenschutzerklärung</h1>
+  <p class="mut">RepackGuard Link Guard · Stand: 17.11.2026</p>
+
+  <h2>Kurzfassung</h2>
+  <p>Die Erweiterung <strong>RepackGuard Link Guard</strong> überprüft die Adressen der
+     Seiten, die Sie aufrufen, und warnt Sie, bevor eine bekannte Betrugsmasche geladen
+     wird. Sie sammelt <strong>keine personenbezogenen Daten</strong>, sendet
+     <strong>keine</strong> Daten an Dritte und speichert lediglich eine Zählung
+     blockierter Versuche <strong>lokal auf Ihrem Gerät</strong>.</p>
+
+  <h2>Welche Daten werden verarbeitet?</h2>
+  <p><strong>Aufruf-Adressen (URLs) und Domainnamen.</strong> Die Erweiterung prüft die
+     Adresse jeder Seite, die Sie öffnen, gegen eine lokale Liste betrügerischer Domains.
+     Dieser Abgleich erfolgt vollständig lokal im Browser. Die Adresse wird
+     <strong>nicht</strong> an einen Server gesendet.</p>
+  <p><strong>Zählung blockierter Versuche.</strong> Die Anzahl der Warnungen wird lokal im
+     Browserspeicher (<code>storage.local</code>) abgelegt und nur in Ihrem Browser
+     angezeigt.</p>
+
+  <h2>Was nicht passiert</h2>
+  <p>
+    · Es werden keine Namen, E-Mail-Adressen, Passwörter oder Kontodaten erhoben.<br>
+    · Es werden keine Inhalte von Nachrichten, Chats oder Seiten gelesen oder übertragen.<br>
+    · Es finden keine Analysen, Telemetrie oder Tracking statt.<br>
+    · Es werden keine Daten an Dritte weitergegeben.
+  </p>
+
+  <h2>Berechtigungen und deren Zweck</h2>
+  <table>
+    <tr><th>Berechtigung</th><th>Zweck</th></tr>
+    <tr><td><code>webNavigation</code></td><td>Erkennt den Aufruf einer Seite, um die Adresse zu prüfen und gegebenenfalls eine Warnseite anzuzeigen.</td></tr>
+    <tr><td><code>tabs</code></td><td>Öffnet die Warnseite im selben Tab.</td></tr>
+    <tr><td><code>storage</code></td><td>Speichert die Zählung blockierter Versuche lokal.</td></tr>
+    <tr><td><code>&lt;all_urls&gt;</code></td><td>Der Abgleich der Adresse muss für alle Seiten möglich sein, damit die Warnung vor dem Laden erscheint.</td></tr>
+  </table>
+
+  <h2>Ihre Rechte</h2>
+  <p>Da keine personenbezogenen Daten verarbeitet werden, entfallen Auskunfts- und
+     Löschansprüche gegen das Projekt. Bei Fragen wenden Sie sich über das
+     <a href="https://github.com/sbelz192/RepackGuard">GitHub-Repository</a> an den
+     Verantwortlichen.</p>
+
+  <h2>Änderungen</h2>
+  <p>Diese Erklärung kann bei Änderungen der Erweiterung angepasst werden. Die jeweils
+     aktuelle Fassung liegt im Repository.</p>
+</div>
+</body>
+</html>
