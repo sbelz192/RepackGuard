@@ -10,6 +10,9 @@ on:
 permissions:
   contents: write
 
+env:
+  RG_VERSION: ${{ github.ref_name }}
+
 jobs:
   build:
     runs-on: windows-latest
@@ -76,8 +79,11 @@ jobs:
       #     organization-id: ${{ secrets.SIGNPATH_ORGANIZATION_ID }}
       #     project: RepackGuard
       #     signing-policy: release
-      #     artifact: dist/RepackGuard-0.1.0-Setup.exe
+      #     artifact: dist/RepackGuard-${{ env.RG_VERSION }}-Setup.exe
       #     api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+
+      - name: Version normalisieren (v0.1.1 -> 0.1.1)
+        run: echo "RG_VERSION=${RG_VERSION#v}" >> "$GITHUB_ENV"
 
       # --- Artefakte -------------------------------------------------------
       - name: Artefakte hochladen
@@ -85,7 +91,7 @@ jobs:
         with:
           name: repackguard-build
           path: |
-            dist/RepackGuard-0.1.0-Setup.exe
+            dist/RepackGuard-${{ env.RG_VERSION }}-Setup.exe
             build/rg_core.dll
           if-no-files-found: warn
 
@@ -94,5 +100,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            dist/RepackGuard-0.1.0-Setup.exe
+            dist/RepackGuard-${{ env.RG_VERSION }}-Setup.exe
             build/rg_core.dll
