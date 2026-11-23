@@ -16,7 +16,8 @@ Browser-Erweiterung **Link Guard** vor bekannten Scam-Seiten, bevor sie laden.
 
 **1 · Link Guard (Browser)** — die einfachste Variante:
 
-- **Firefox:** im Add-ons-Store verfügbar (Suchbegriff: *RepackGuard Link Guard*).
+- **Firefox:** im Add-ons-Store verfügbar:
+  [addons.mozilla.org/…/repackguard-link-guard](https://addons.mozilla.org/de/firefox/addon/repackguard-link-guard/)
 - **Chrome / Edge:** Store-Einreichung läuft.
 - **Manuell:** `chrome://extensions` → Entwicklermodus → „Entpackte Erweiterung
   laden“ → Ordner `browser-extension`.

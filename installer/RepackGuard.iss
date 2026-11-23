@@ -1,9 +1,9 @@
 ; RepackGuard — Windows-Installer (Inno Setup 6)
 ; Bau:  ISCC installer/RepackGuard.iss
-; Ergebnis: dist/RepackGuard-0.1.0-Setup.exe
+; Ergebnis: dist/RepackGuard-0.1.1-Setup.exe
 
 #define MyAppName "RepackGuard"
-#define MyAppVersion "0.1.0"
+#define MyAppVersion "0.1.1"
 #define MyAppPublisher "RepackGuard"
 #define MyAppExeName "RepackGuard.exe"
 
