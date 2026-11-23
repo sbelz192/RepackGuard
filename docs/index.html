@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RepackGuard — Erkennt, wenn Installer den Virenschutz aushebeln</title>
-<meta name="description" content="OpenSource-Watchdog gegen Repack-Infektionen und Scam-Weiterverbreitung: erkennt in Echtzeit, wenn Software den Microsoft Defender aushebt.">
+<meta name="description" content="OpenSource-Watchdog: erkennt in Echtzeit, wenn Software den Microsoft Defender aushebt, und warnt im Browser vor 92 bekannten Scam-Domains.">
 <style>
   :root{
     --bg:#0b1220; --bg2:#131c2e; --line:#26324a; --txt:#e5e9f0; --mut:#aab4c6;
@@ -107,7 +107,8 @@
       <span class="badge">C-Kern portabel</span>
       <span class="badge">C# Tray</span>
       <span class="badge">Browser-Erweiterung MV3</span>
-      <span class="badge">100 % Tests</span>
+      <span class="badge">92 kuratierte Scam-Domains</span>
+      <span class="badge">Firefox Store live</span>
     </div>
   </div>
 </header>
@@ -151,9 +152,10 @@
       </div>
       <div class="card">
         <h3>Link Guard</h3>
-        <p>Browser-Erweiterung (Chrome/Edge/Firefox). Prüft angeklickte Links gegen
-           eine Scam-Datenbank und Heuristik und leitet vor der Seite auf eine
-           Warnseite um.</p>
+        <p>Browser-Erweiterung (Firefox, Chrome, Edge). Prüft angeklickte Links gegen
+           eine kuratierte Datenbank mit <strong>92 bekannten Scam-Domains</strong> und
+           eine Heuristik, und leitet vor dem Laden auf eine Warnseite um.
+           Datenquellen: URLhaus und Phishing.Database (MIT).</p>
       </div>
       <div class="card">
         <h3>C-Kern (portabel)</h3>
@@ -172,34 +174,35 @@
 
 <section id="install">
   <div class="wrap">
-    <h2>Installation</h2>
-    <p class="lead">Zwei Wege: Die Browser-Erweiterung in einer Minute, die
-       Desktop-App aus dem Quelltext.</p>
+    <h2>Installation — der einfachste Weg</h2>
+    <p class="lead">Link Guard ist im <strong>Firefox-Add-ons-Store</strong> verfügbar
+       (Suchbegriff: <em>RepackGuard Link Guard</em>). Die Desktop-App bekommst du
+       als fertiger Installer.</p>
     <div class="grid g2">
       <div class="card">
         <h3>1 · Link Guard (Browser)</h3>
-        <p>Chrome/Edge: <code>chrome://extensions</code> → Entwicklermodus →
-           „Entpackte Erweiterung laden“ → Ordner <code>browser-extension</code> wählen.</p>
-        <p>Firefox: <code>about:debugging</code> → „Firefox“ → „Eigene Erweiterungen laden“
-           → <code>manifest.json</code> wählen.</p>
+        <p><strong>Firefox:</strong> im Add-ons-Store — ein Klick, fertig.</p>
+        <p><strong>Chrome / Edge:</strong> Store-Einreichung läuft.</p>
+        <p><strong>Manuell:</strong> <code>chrome://extensions</code> → Entwicklermodus →
+           „Entpackte Erweiterung laden“ → Ordner <code>browser-extension</code>.</p>
       </div>
       <div class="card">
         <h3>2 · Desktop-Tray (Windows)</h3>
-        <div class="code"><span class="c"># C-Kern + DLL bauen</span>
-cmake -S . -B build -G "MinGW Makefiles"
-cmake --build build
-
-<span class="c"># Tray-App bauen</span>
+        <p><strong>Installer:</strong> aus dem
+           <a href="https://github.com/sbelz192/RepackGuard/releases">Release-Bereich</a>
+           herunterladen, doppelklicken — Autostart wird angelegt, kein Administrator
+           nötig.</p>
+        <div class="code"><span class="c"># alternativ aus dem Quelltext</span>
 cd bridge/RepackGuard.Tray
-dotnet build -c Release
-
-<span class="c"># starten</span>
-bin/Release/net10.0-windows/RepackGuard.exe</div>
+dotnet publish -c Release -r win-x64 --self-contained true -o publish
+publish\RepackGuard.exe</div>
       </div>
     </div>
     <div class="note" style="margin-top:20px">
       Der Defender-Ereignisprotokoll ist ohne Administrator ggf. nicht lesbar.
       Ohne Admin bleibt die App im Informationsmodus und meldet das.
+      Der Installer ist <strong>nicht signiert</strong> — SmartScreen warnt beim
+      ersten Start einmal.
     </div>
   </div>
 </section>

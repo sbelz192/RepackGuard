@@ -1,22 +1,47 @@
 # RepackGuard
 
 RepackGuard erkennt den Moment, in dem ein Installer den Microsoft Defender
-aushebelt — und warnt, **bevor** der Schaden weitergeht.
+aushebelt — und warnt, **bevor** der Schaden weitergeht. Daneben warnt die
+Browser-Erweiterung **Link Guard** vor bekannten Scam-Seiten, bevor sie laden.
 
-Hintergrund ist eine reale Infektion vom 14.11.2026: Eine Repack-Installation
-(Dark Souls II, DODI-Repacks) enthielt `steam_api64.dll` mit dem Trojaner
-`Trojan:Win32/Occamy!rfn`. Der Defender erkannte die Datei, aber der User fügte eine Ausnahme hinzu.:
+## Was es konkret kann
+
+| Schutz | Wie | Wo |
+|---|---|---|
+| **Aushebel-Erkennung** | Erkennt das Muster *Quarantäne-Restore + Defender-Ausnahme* in Echtzeit und zeigt Sofortmaßnahmen | Desktop-Tray (Windows) |
+| **Scam-Warnung** | Prüft angeklickte Links gegen eine kuratierte Datenbank (aktuell **92 Domains**) und eine Heuristik | Link Guard (Browser) |
+| **Laufende Aktualisierung** | Täglicher Abruf neuer Kandidaten aus URLhaus und Phishing.Database | Cron / Updater |
+
+## Am einfachsten nutzen
+
+**1 · Link Guard (Browser)** — die einfachste Variante:
+
+- **Firefox:** im Add-ons-Store verfügbar (Suchbegriff: *RepackGuard Link Guard*).
+- **Chrome / Edge:** Store-Einreichung läuft.
+- **Manuell:** `chrome://extensions` → Entwicklermodus → „Entpackte Erweiterung
+  laden“ → Ordner `browser-extension`.
+
+**2 · Desktop-Tray (Windows):**
+
+- **Installer:** im [Release-Bereich](https://github.com/sbelz192/RepackGuard/releases)
+  — doppelklicken, fertig. Legt Autostart an, kein Administrator nötig.
+- **Aus dem Quelltext:** siehe [Bauen](#bauen).
+
+## Der Vorfall hinter dem Projekt
+
+Am 14.11.2026 enthielt eine Repack-Installation (Dark Souls II, DODI-Repacks)
+`steam_api64.dll` mit dem Trojaner `Trojan:Win32/Occamy!rfn`:
 
 ```
-17:43:55  1116  Trojan:Win32/Occamy!rfn erkannt   (steam_api64.dll)
+17:43:55  1116  Trojan:Win32/Occamy!rfn erkannt      (steam_api64.dll)
 17:44:15  1117  Aktion: Quarantäne
 17:48:44  1009  aus der Quarantäne wiederhergestellt   <-- der Installer
 17:48:45  5007  Defender-Ausnahme für genau diese Datei <-- Scanner blindgeschaltet
 ```
 
-Schritt 2 und 3 zusammen bedeuten: Die Infektion wurde wieder aktiviert, und
-der Virenschutz wurde für genau diese Datei ausgeschaltet. Genau das Muster
-erkennt RepackGuard.
+Schritt 2 und 3 zusammen: Die Infektion wurde wieder aktiviert **und** der
+Virenschutz für genau diese Datei ausgeschaltet. Genau das Muster erkennt
+RepackGuard.
 
 ## Bausteine
 
@@ -25,8 +50,9 @@ erkennt RepackGuard.
 | `src/rg_core` | Erkennungslogik in C (portabel, ohne Windows-Zwang) | fertig, getestet |
 | `src/rg_cli` | Kommandozeile zum Prüfen von Ereignis-Exporten | fertig, getestet |
 | `bridge/RepackGuard.Tray` | Desktop-App mit Tray, Defender-Eventlog, P/Invoke | fertig, getestet |
-| `browser-extension` | Link Guard: warnt vor Scam-Seiten im Browser | fertig, getestet |
-| `tools/update-db.py` | Sammelt Kandidaten für die Scam-Datenbank (URLhaus) | fertig, getestet |
+| `browser-extension` | Link Guard: warnt vor Scam-Seiten im Browser | fertig, im Store |
+| `tools/update-db.py` | Kandidaten aus URLhaus + Phishing.Database | fertig |
+| `tools/kuratieren.py` | Regelwerk zur konservativen Kuratierung | fertig |
 | `docs` | Webseite | online |
 
 ## Bauen
@@ -42,7 +68,13 @@ Die Desktop-App (benötigt .NET 10):
 
 ```sh
 cd bridge/RepackGuard.Tray
-dotnet build -c Release
+dotnet publish -c Release -r win-x64 --self-contained true -o publish
+```
+
+Der Installer (benötigt Inno Setup 6):
+
+```sh
+iscc installer/RepackGuard.iss
 ```
 
 ## Testen
@@ -63,48 +95,29 @@ dotnet run -c Release
 
 Erwartet: `INTEROP OK` (Vorfall → `alarm=1`, Kontrollfall → `alarm=0`).
 
-## Architektur
-
-```
-rg_core (C, portabel)
-   ├── rg_cli ............ Test- und Diagnose-Werkzeug
-   ├── rg_core.dll ....... P/Invoke-Schnittstelle
-   │      └── RepackGuard.exe (C#-Tray: Eventlog, Alarm, Sofortmaßnahmen)
-   └── shared/rules.js ... Link-Bewertung (Browser-Erweiterung)
-```
-
-Der Kern kennt nichts von Windows: Er bekommt eine Liste von Ereignissen und
-liefert einen Report. Dadurch ist die Erkennung logbar, testbar und portierbar.
-
-## Link Guard
-
-Die Browser-Erweiterung (Chrome, Edge, Firefox) prüft angeklickte Links gegen
-die Scam-Datenbank und die Heuristik und leitet vor dem Laden auf eine
-Warnseite um.
-
-Installieren: `chrome://extensions` → Entwicklermodus → „Entpackte Erweiterung
-laden“ → Ordner `browser-extension`.
-
 ## Scam-Datenbank
 
-`browser-extension/data/domains.json` enthält bekannte Scam-Domains und
-Domain-Muster. `browser-extension/data/candidates.json` enthält Kandidaten aus
-dem URLhaus-Export. **Kandidaten sind nicht kuratiert** und werden nicht
-automatisch blockiert — eine Übernahme ohne Prüfung würde echte Seiten
-blockieren.
+`browser-extension/data/domains.json` enthält die **kuratierte** Liste
+(92 Domains). `candidates.json` enthält den unkuratierten Rohbestand.
 
-Datenbank aktualisieren (benötigt einen kostenlosen URLhaus-Schlüssel):
+Quellen (nur klar lizenzierte):
+
+- **URLhaus** (abuse.ch) — alle 5 Minuten aktualisiert, fair-use.
+- **Phishing.Database** (MIT) — stündlich aktualisiert.
+
+Bewusst **nicht** verwendet: Quellen unter **GPL-3.0** (Copyleft, würde das
+MIT-Projekt unter GPL zwingen) und solche mit **non-commercial**-Klauseln.
 
 ```sh
-python tools/update-db.py --key <schluessel>
+python tools/update-db.py     # Kandidaten neu laden
+python tools/kuratieren.py    # Kuratierungsvorschlag anzeigen
 ```
 
-Der Schlüssel liegt in `tools/.urlhaus-key` und wird bewusst nicht
-mitcommittet.
+Details zu Quellen und Lizenzen: `browser-extension/data/SOURCES.md`.
+Der tägliche Abruf ist als Cron-Job eingerichtet (schreibt nur Kandidaten,
+kuratiert nichts).
 
 ## Webseite
-
-Die Projektseite liegt in `docs/` und ist erreichbar unter:
 
 **https://sbelz192.github.io/RepackGuard/**
 
@@ -115,10 +128,13 @@ Die Projektseite liegt in `docs/` und ist erreichbar unter:
 - Der Discord-**Desktop-Client** wird nicht überwacht. Das ist technisch nicht
   sauber abbildbar und würde gegen die Discord-Nutzungsbedingungen verstoßen.
   Link Guard greift nur im Browser.
-- Der Tray-Benutzer muss ggf. Administratorrechte haben, um das
+- Der Tray-Benutzer braucht ggf. Administratorrechte, um das
   Defender-Ereignisprotokoll zu lesen. Ohne Rechte bleibt die App im
   Informationsmodus.
-- Erkannt wird ein **Muster**, nicht „alle Trojaner“.
+- Erkannt wird ein **Muster**, nicht „alle Trojaner". Die Domain-Datenbank
+  erfasst bekannte Scam-Domains, nicht jede betrügerische Seite.
+- Der Windows-Installer ist **nicht signiert** — Windows SmartScreen warnt beim
+  ersten Start einmal.
 
 ## Mitmachen
 
@@ -129,4 +145,6 @@ Die Projektseite liegt in `docs/` und ist erreichbar unter:
 
 ## Lizenz
 
-MIT — siehe [LICENSE](LICENSE).
+MIT — siehe [LICENSE](LICENSE). Die Domain-Daten stammen aus den oben
+genannten Quellen; deren Lizenzen sind in `browser-extension/data/SOURCES.md`
+festgehalten.
