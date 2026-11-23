@@ -1,7 +1,16 @@
 {
-  "updated": "2026-11-17",
-  "note": "Bekannte Scam-Domains. Ergaenzen via GitHub-Issue. Heuristik ist bewusst konservativ.",
+  "updated": "2026-11-18",
+  "note": "Bekannte Scam-Domains, kuratiert aus URLhaus (abuse.ch) und Phishing.Database (MIT). Ergaenzen/Korrekturen via GitHub-Issue. Heuristik bewusst konservativ.",
   "domains": [
+    "bloodcheat.com",
+    "blueskycheat.com",
+    "flycheats.xyz",
+    "giftcard-balance.co",
+    "repack-address-usps.com",
+    "repack-serve.top",
+    "repack-service-usps.com",
+    "robux-store.com",
+    "robux.media",
     "runicwin.com",
     "voxwin.cc"
   ],
@@ -14,6 +23,24 @@
     "free-robux",
     "robux-generator"
   ],
-  "risky_tlds": [".cc", ".xyz", ".to", ".top", ".site", ".shop", ".live", ".fun"],
-  "risky_keywords": ["giveaway", "claim", "casino", "crypto", "robux", "free-nitro", "mrbeast"]
+  "risky_tlds": [
+    ".cc",
+    ".xyz",
+    ".to",
+    ".top",
+    ".site",
+    ".shop",
+    ".live",
+    ".fun"
+  ],
+  "risky_keywords": [
+    "giveaway",
+    "claim",
+    "casino",
+    "crypto",
+    "robux",
+    "free-nitro",
+    "mrbeast",
+    "repack"
+  ]
 }

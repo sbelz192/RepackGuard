@@ -1,0 +1,2925 @@
+{
+  "generated": "2026-11-23 07:46:18 UTC",
+  "sources": {
+    "urlhaus": "abuse.ch fair-use (free key, non-commercial)",
+    "phishing-database": "MIT (Phishing.Database, Mitchell Krog)"
+  },
+  "counts": {
+    "urlhaus": 0,
+    "phishing-database": 291
+  },
+  "count": 291,
+  "kuratiert": false,
+  "candidates": [
+    {
+      "domain": "30minute-reward.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "41293-crypto.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "a1drop-giveaway.online",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "aave-airdrop.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "academy-giveaway.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "acess-near-wallet.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "additional-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "agen-casino.me",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "aiirdrop-claim.online",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "airdrop-base.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-cb.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-discord-nitro.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro,airdrop"
+    },
+    {
+      "domain": "airdrop-exodus10.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-gummyonsol.top",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-holders-stake.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-manta.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-metamask.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-mike.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-nft.store",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-pancakeswap.info",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-pancakeswap.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-pancakeswap.tech",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-trustwaleet.tk",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-uriswap.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-uriswap.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "airdrop-wallet-connect.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop,wallet"
+    },
+    {
+      "domain": "all-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "annual-costco-membership-reward.ca",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "ap-reactivate-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "app-uniswap-wallet.ml",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "app-wallet-sync.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "apple-wallet-activation.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "atomic-wallet.trade",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "auid-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "authentication-wallet.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "authorize-giveaway.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "axie-airdrop.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "base-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "bestchange-wallet.site",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "bet365-casino.gr",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "bgmi-pubg-spin-giveaway.tk",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "bgmi-reward.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "bitfarmsmining-crypto.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "bitmex-airdrop.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "bitstarz-casino-new.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "bitstarz-casino.space",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "bitstarz-casino.su",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "bitstarz28-casino.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "blockchains-wallet.tk",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "bomb-crypto.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "boredapeyachtclub2-free.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "boredapeyachtclub3-free.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "brave-wallet.me",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "bridge-wallet.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "browser-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "btc-prize.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: prize"
+    },
+    {
+      "domain": "btc-wallet.shop",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "casino-billionairespin.es",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "casino-billionairespin.gr",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "casino-crown.com.au",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "chainlink-wallet.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "claim-0nline-governmenttax.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-alert-gb.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-app.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-diamond12.cf",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-erc20-token-bonus.ga",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-event-mlbb2022.ga",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-eventgs8.ga",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-eventmobilelegend-2022.tk",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-mlbb157.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-mlbb936.ml",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-mljq1.ml",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-mobilelegend.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-mytaxrebates-govuk.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-nft.site",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-office.co.uk",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-online-overpayment.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-onlinegoverment.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-payments-en.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-rebate-help.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-ref-info.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-refund-gb.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-researchhub.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-seedify.fund",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-skin-budi.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-skinmlbb.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-stimulus.info",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-tax-reliefs-aids.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "claim-verify.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "click-media-prize.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: prize"
+    },
+    {
+      "domain": "cn-imtoken-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "cn-wallet-imtoken.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "coinbase-wallet.com.cn",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "con-met-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "con-wallet.network",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "connect-wallet-meta.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "connect-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "connet-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "cosmos-giveaway.online",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "create-skins-free.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "crypto-connect.ml",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-hunters.io",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-mult.io",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-review.site",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-sync.online",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-sync.tech",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-transfer.site",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-wave.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "crypto-wave.top",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "csgo-prize.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: prize"
+    },
+    {
+      "domain": "dappsychronizer-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "discord-airdrop.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "discord-ps4-nitro.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "dlscord-nitro.click",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "dlscord-nitro.link",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "dlscord-nitro.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "dvla-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "eba-wallet.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "electrum-wallet.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "eligible-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "elite-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "elon-gift.site",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .site"
+    },
+    {
+      "domain": "en-claim-taxreturn.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "en-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "ethereum-claim-now.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "ethereum-service-wallet-your-account-locked.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "etilsalat-claim-egift.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "event-tiktok-free-fire.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .gq"
+    },
+    {
+      "domain": "ff-claim-gratis.me",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "finance-reward.site",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "flnance-wallet-swap.dev",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "fluff-claim.buzz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "free-10000-listings-due-today-3wedd44dw.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "free-50gb.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "free-claims62.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .gq"
+    },
+    {
+      "domain": "free-data12.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .gq"
+    },
+    {
+      "domain": "free-drift.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "free-instagram-followers.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .gq"
+    },
+    {
+      "domain": "free-joint84.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .gq"
+    },
+    {
+      "domain": "free-nitro-generator-for-discord.tk",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "free-rewards.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "free-telegram.top",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .top"
+    },
+    {
+      "domain": "free1-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "freefire-reward-garena.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "freefireebgid-claim.ml",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "get-free-crypto.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "gift-card.cfd",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: gift-card"
+    },
+    {
+      "domain": "gift-cash.icu",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .icu"
+    },
+    {
+      "domain": "gift-link305.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .gq"
+    },
+    {
+      "domain": "gift-nitro.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "gift-wallet-stellar.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "giftcard-balance.co",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giftcard"
+    },
+    {
+      "domain": "giveaway-event-confirmation.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "giveaway-token.online",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "gov-info-claim-tax.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "gov-uk-claim-tax-refund.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "govhmrctax-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "govuk-claim-taxrebate.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "govuk-hmrc-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "govuk-tax-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "hadiahfire-free.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .gq"
+    },
+    {
+      "domain": "hmrc-claim-rebate.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "hmrc-tax-refund-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "hmtaxrebate-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "holders-airdrop.coupons",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "https://peelcomms.org/luno-wallet-account-help-desk/luno/",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "hypesquad-claim.gq",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "impt-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "imtoken-wallet.me",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "info-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "iranbet.casino",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "irs-page-claim-payment.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "irs-tax-claim-online.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "irs-tax-claim-refund.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "jagex-reward.club",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "keyless-wallet-bybit.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "kinbet.casino",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "krafton-reward.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "latest-casino-reviews.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "ledger-wallet-en.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "ledger-wallet.pro",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "leonbets-casino.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "linkchain-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "meta-collect-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "meta-connec-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "meta-support-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "meta-verification-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "meta-verified-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "meta-wallet-connect.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "meta-wallet.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metabridger-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask--wallet.shop",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-giveaway.io",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "metamask-wallet-activation.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-wallet-security.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-wallet-support.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-wallet-verification.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-wallet.buzz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-wallet.cn",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-wallet.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "metamask-wallet.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "microsoft-free.live",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .live"
+    },
+    {
+      "domain": "mlbb-claim-box76.cf",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "mlbb-claim-box76.ga",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "mobilelegends-claim.ml",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "my-wallet-validation.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "myetherwallet-com-crypto.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "netanask-wallet.live",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "nft-wallet.finance",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "nft-wallet.live",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "nitro-buy.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "nitro-free.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "nitro-free.site",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "nitro-host.space",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: nitro"
+    },
+    {
+      "domain": "nitros-free.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "obzory-online-casino.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "opensea-giveaway.shop",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "outerring-giveaway.online",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "paenkekeswoap-crypto.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: crypto"
+    },
+    {
+      "domain": "pancakes-airdrop.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "pancakes-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "pancakeswap-airdrop.info",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "pancakeswap-giveaway.online",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: giveaway"
+    },
+    {
+      "domain": "paxful-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "paypal-online.casino",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "phantom-wallet-extension.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "phantom-wallet.at",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "phantom-wallet.digital",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "phantom-wallet.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "phantum-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "pk-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "polygon-wallet.loan",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "post-claim.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "prize-instagram.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: prize"
+    },
+    {
+      "domain": "prize-set.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: prize"
+    },
+    {
+      "domain": "prize.asia",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: prize"
+    },
+    {
+      "domain": "pro-reward.cn",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "pubg-event-claim.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "pubgm-event-free.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "quatro-casino.ca",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: casino"
+    },
+    {
+      "domain": "register-claim.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "register-reward.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "repack-address-usps.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: repack"
+    },
+    {
+      "domain": "repack-serve.top",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: repack"
+    },
+    {
+      "domain": "repack-service-usps.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: repack"
+    },
+    {
+      "domain": "reset-billing-connection-wallet.support",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "review-wallet-activity.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "reward-ff-gorema.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-ff-qarena.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-flf-garena.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-gareha.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-garena-ffkz.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-garena-freefire.ru",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-mobile-legends.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-official-store.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "reward-support.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: reward"
+    },
+    {
+      "domain": "roblox-gift.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .xyz"
+    },
+    {
+      "domain": "robux-store.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: robux"
+    },
+    {
+      "domain": "robux.media",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: robux"
+    },
+    {
+      "domain": "ronin-wallet.us",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "steam-gift.live",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .live"
+    },
+    {
+      "domain": "support-wallet.live",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "tp-wallet.cc",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "trezor-wallet-trezor.net",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "trust-airdrop.sbs",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: airdrop"
+    },
+    {
+      "domain": "trust-secure-wallet.info",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "trust-wallet-app.to",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "update-wallet.in",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "usa-claim-customer.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: claim"
+    },
+    {
+      "domain": "verifymy-wallet.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wakfu-gift.shop",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "riskante TLD .shop"
+    },
+    {
+      "domain": "wallet--coin.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-accounts.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-app.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-app.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-bankers.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-cn-imtoken.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-dapps.live",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-foundation.xyz",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-keyless-bybit.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-login-coinbase.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-management2.app",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-menu.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-pay.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-pays.org",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-validates.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-verification.su",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-web3.im",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-web3.ing",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-web3.io",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    },
+    {
+      "domain": "wallet-zh-imtoken.com",
+      "url": "",
+      "source": "phishing-database",
+      "threat": "phishing",
+      "tags": "",
+      "reporter": "",
+      "date": "",
+      "reason": "Muster: wallet"
+    }
+  ]
+}
