@@ -125,6 +125,35 @@ RepackGuard does not replace an antivirus — it adds one more warning layer.
 
 ---
 
+## 10 · Anmerkung für die Prüfer bei Version 0.1.1
+
+```
+What is new in 0.1.1
+
+The curated scam-domain database (data/domains.json) grew from 2 to 92
+domains. Nothing else changed.
+
+Data sources (both openly licensed):
+- URLhaus (abuse.ch) - malware URLs, refreshed every 5 minutes
+- Phishing.Database (MIT license) - phishing domains, hourly
+
+What did NOT change:
+- No new permissions; the manifest permission set is identical to 0.1.0
+- No new scripts, no new network endpoints, no remote code
+- The check still runs entirely locally in the browser
+
+How the list is built (so the review can verify it):
+- tools/update-db.py downloads the public sources and writes raw candidates
+- tools/kuratieren.py applies a documented, conservative rule set
+  (word boundaries, risky TLDs, brand-abuse heuristics)
+- Hosting platforms (Weebly, Webflow, Netlify, GitHub Pages, ...) are
+  excluded so a platform is never blocked as a whole
+- Only the curated list (data/domains.json) ships in the add-on;
+  candidates.json stays a non-blocking reference
+
+The database file is included in the package and can be inspected directly.
+```
+
 ## Wichtig
 
 - Der Beschreibungstext behauptet **nicht**, die Erweiterung schütze vor jedem
