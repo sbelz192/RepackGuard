@@ -7,6 +7,26 @@ Format nach [Keep a Changelog](https://keepachangelog.com/de/1.1.0/).
 
 Noch nicht veröffentlicht.
 
+## [0.1.1] — 2026-11-18
+
+### Geändert
+
+- Domain-Datenbank erweitert: Kuratierung aus **URLhaus** (abuse.ch) und
+  **Phishing.Database** (MIT). Überprüft wurden 103.629 URLhaus-Einträge und
+  392.178 Phishing-Domains; übernommen wurden 11 eindeutige Scam-Domains.
+- Updater (`tools/update-db.py`) um Phishing.Database erweitert; Filter mit
+  **Wortgrenzen** (keine Treffer wie „ofertasdodia") und Normalisierung auf
+  die registrierte Domain (eTLD+1).
+- Quellen und Lizenzen dokumentiert (`browser-extension/data/SOURCES.md`).
+
+### Nicht übernommen (bewusst)
+
+- 291 Kandidaten mit breiten Mustern (airdrop, giveaway, casino, wallet)
+  bleiben unkuratiert in `candidates.json` — Zuweisung zu riskant für eine
+  harte Blockliste.
+- Quellen mit GPL-3.0 (Copyleft) und non-commercial-Bedingungen sind
+  ausgeschlossen.
+
 ## [0.1.0] — 2026-11-18
 
 ### Hinzugefügt
