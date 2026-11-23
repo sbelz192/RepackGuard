@@ -13,7 +13,7 @@ Noch nicht veröffentlicht.
 
 - Domain-Datenbank erweitert: Kuratierung aus **URLhaus** (abuse.ch) und
   **Phishing.Database** (MIT). Überprüft wurden 103.629 URLhaus-Einträge und
-  392.178 Phishing-Domains; übernommen wurden 11 eindeutige Scam-Domains.
+  392.178 Phishing-Domains; übernommen wurden 92 eindeutige Scam-Domains (Regelwerk tools/kuratieren.py).
 - Updater (`tools/update-db.py`) um Phishing.Database erweitert; Filter mit
   **Wortgrenzen** (keine Treffer wie „ofertasdodia") und Normalisierung auf
   die registrierte Domain (eTLD+1).
@@ -21,9 +21,8 @@ Noch nicht veröffentlicht.
 
 ### Nicht übernommen (bewusst)
 
-- 291 Kandidaten mit breiten Mustern (airdrop, giveaway, casino, wallet)
-  bleiben unkuratiert in `candidates.json` — Zuweisung zu riskant für eine
-  harte Blockliste.
+- 209 Kandidaten bleiben bewusst unkuratiert in `candidates.json`
+  (zu breites Muster / keine risikoreische TLD / legitime Marke).
 - Quellen mit GPL-3.0 (Copyleft) und non-commercial-Bedingungen sind
   ausgeschlossen.
 
